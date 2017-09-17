@@ -1,4 +1,7 @@
 import Foundation
+import UIKit
+
+let NA: Double = -1
 
 class AppSession {
     static let urlSession = URLSession.shared
@@ -13,4 +16,8 @@ class AppSession {
         }
     }
     
+}
+
+class SleepSummary {
+    static var data: [Double] = [NA, NA, NA, NA, NA, NA, NA]
 }
