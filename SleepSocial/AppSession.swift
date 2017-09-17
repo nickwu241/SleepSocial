@@ -12,6 +12,7 @@ class AppSession {
                 print("accessToken = \(accessToken!)")
                 //recordSleepTime()
                 //recordWakeupTime()
+                //setGoals()
             }
         }
     }

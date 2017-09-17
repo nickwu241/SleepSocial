@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -256,7 +256,6 @@
         <!--Sign Up View Controller-->
         <scene sceneID="JJD-vi-cJm">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xhf-ZS-mmT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier=" " id="4gK-GD-kwF" customClass="SignUpViewController" customModule="SleepSocial" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Meu-Dv-mf2"/>
@@ -308,6 +307,7 @@
                         <outlet property="userNameTextField" destination="WUR-sS-xyj" id="KBl-mQ-BPB"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xhf-ZS-mmT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="808.79999999999995" y="127.28635682158921"/>
         </scene>
@@ -508,10 +508,10 @@
             </objects>
             <point key="canvasLocation" x="2248.8000000000002" y="122.78860569715144"/>
         </scene>
-        <!--View Controller-->
+        <!--Set Goals View Controller-->
         <scene sceneID="1X2-q4-yC0">
             <objects>
-                <viewController id="3Ri-VP-suR" sceneMemberID="viewController">
+                <viewController id="3Ri-VP-suR" customClass="SetGoalsViewController" customModule="SleepSocial" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="R3q-xs-Fxf"/>
                         <viewControllerLayoutGuide type="bottom" id="K77-pX-gB3"/>
@@ -528,6 +528,7 @@
                                 <rect key="frame" x="251" y="577" width="98" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
+                                    <action selector="callSetGoals:" destination="3Ri-VP-suR" eventType="touchUpInside" id="EoT-Ia-fH0"/>
                                     <segue destination="YcF-y6-YcI" kind="show" id="8Zi-u6-1Lp"/>
                                 </connections>
                             </button>

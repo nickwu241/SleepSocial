@@ -37,7 +37,7 @@ class SignUpViewController: UIViewController {
             
         }
         //signUp(username: userName, password: password)
-        signIn(username: userName, password: password)
+        signUp(username: userName, password: password)
         print("Username=\(userName),PW=\(password)")
     }
         

@@ -16,6 +16,51 @@ func recordWakeupTime() {
     record("wakeupTime")
 }
 
+func setGoals() {
+    guard var urlRequest = Requests.post(SSendpoint) else {
+        return
+    }
+    
+    urlRequest.addValue("application/json", forHTTPHeaderField: "content-type")
+    let body: [String: Any] = ["accessToken": AppSession.accessToken!, "actionType": "setGoals", "sleepFor": 1, "sleepAt": Date().iso8601]
+    let jsonBody: Data
+    do {
+        jsonBody = try JSONSerialization.data(withJSONObject: body, options: [])
+        urlRequest.httpBody = jsonBody
+    } catch {
+        print("ERROR: cannot create JSON")
+        return
+    }
+    
+    let task = AppSession.urlSession.dataTask(with: urlRequest) {
+        (data, response, error) in
+        guard error == nil else {
+            print("ERROR: calling POST")
+            print(error!)
+            return
+        }
+        
+        guard let responseData = data else {
+            print("ERROR: did not receive data")
+            return
+        }
+        
+        do {
+            guard let jsonResponse = try JSONSerialization.jsonObject(with: responseData, options: [])
+                as? [String: Any] else {
+                    print("ERROR1: trying to convert data to JSON")
+                    return
+            }
+            print(jsonResponse)
+        }
+        catch {
+            print("ERROR2: trying to convert data to JSON")
+            return
+        }
+    }
+    task.resume()
+}
+
 func searchFriend(username: String) {
     guard var urlRequest = Requests.post(SSendpoint) else {
         return
@@ -136,7 +181,7 @@ fileprivate func signIn(username: String, pw: String, createNewAccount: Bool) {
     urlRequest.addValue("application/json", forHTTPHeaderField: "content-type")
     
     let actionType = createNewAccount ? "signup" : "signin"
-    let body: [String: Any] = ["username": username, "password": pw, "actionType" : actionType]
+    let body: [String: Any] = ["username": username, "password": pw, "actionType" : actionType, "phoneNumber": "7787258086"]
     let jsonBody: Data
     do {
         jsonBody = try JSONSerialization.data(withJSONObject: body, options: [])
@@ -174,6 +219,9 @@ fileprivate func signIn(username: String, pw: String, createNewAccount: Bool) {
                     return
                 }
                 AppSession.accessToken = String(describing: accessToken)
+            }
+            else {
+                signIn(username: username, password: pw)
             }
         }
         catch {
