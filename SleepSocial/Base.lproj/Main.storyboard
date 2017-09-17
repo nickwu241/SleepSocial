@@ -44,6 +44,215 @@
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="128.18590704647679"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="v3n-kL-F1F">
+            <objects>
+                <viewController id="Lp5-a1-O0t" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I8o-S2-hD3"/>
+                        <viewControllerLayoutGuide type="bottom" id="pwl-AJ-ULp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="76x-1H-Abj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Feed 1" translatesAutoresizingMaskIntoConstraints="NO" id="rUt-1v-YwS">
+                                <rect key="frame" x="-1" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgg-qR-vd0">
+                                <rect key="frame" x="16" y="20" width="343" height="544"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="Zu6-72-bdZ" kind="show" id="7Mq-TC-iSj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dj4-Sb-9nM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-724" y="1679.9100449775115"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oGG-DI-Xsc">
+            <objects>
+                <viewController id="KkX-MK-mo5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JTg-L3-wcX"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pmj-p8-hFo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KkA-Wp-bhZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Feed 1.4 register friend " translatesAutoresizingMaskIntoConstraints="NO" id="Jsh-ns-qv9" userLabel="Feed 1.4 register friend">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dJu-gU-FjB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="208" y="1716"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="m9z-3t-jFK">
+            <objects>
+                <viewController id="Zu6-72-bdZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nrt-50-Id1"/>
+                        <viewControllerLayoutGuide type="bottom" id="pCV-i0-tJo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MqE-kO-WOA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Feed 1.6 view progress" translatesAutoresizingMaskIntoConstraints="NO" id="ban-t5-ui7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fy-If-e4W">
+                                <rect key="frame" x="0.0" y="0.0" width="326" height="597"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="KkX-MK-mo5" kind="show" id="Bte-sa-p7K"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JfQ-K0-rYG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1060" y="1721.2893553223389"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="34s-m8-OJq">
+            <objects>
+                <viewController id="6EL-MO-nTk" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bre-tN-Olg"/>
+                        <viewControllerLayoutGuide type="bottom" id="cEo-al-TaU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RFo-c5-CNR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Dashboard 1.1 hover over first bar " translatesAutoresizingMaskIntoConstraints="NO" id="3Ij-Ok-NRZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZn-o1-CKb">
+                                <rect key="frame" x="137" y="510" width="212" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="Bf6-gw-FrO" kind="show" id="ird-Bj-Lhb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Rd-3z-86Q">
+                                <rect key="frame" x="159" y="623" width="58" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="Lp5-a1-O0t" kind="show" id="Eou-UG-tss"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="boX-yq-prf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="968.36581709145435"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MSk-Fe-xpe">
+            <objects>
+                <viewController id="Bf6-gw-FrO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Se3-YC-lhI"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xpu-jZ-keV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wsg-ar-ZoC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Dashboard 1.3 tooltip for alert" translatesAutoresizingMaskIntoConstraints="NO" id="eT4-FQ-yxI">
+                                <rect key="frame" x="-2" y="-2" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wu8-QD-zay">
+                                <rect key="frame" x="16" y="-24" width="346" height="671"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="wXr-iv-OgI" kind="show" id="hZo-sM-6LX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ENE-vZ-u7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="767.20000000000005" y="971.96401799100454"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0XD-kG-IxP">
+            <objects>
+                <viewController id="L77-1H-J2K" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FFc-jE-ebB"/>
+                        <viewControllerLayoutGuide type="bottom" id="hvL-wn-9Ay"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AWw-4F-TdL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hn1-sa-75q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1510" y="984"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1Mb-U1-5L5">
+            <objects>
+                <viewController id="juq-VF-FbP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YgK-1J-aHy"/>
+                        <viewControllerLayoutGuide type="bottom" id="QPg-7T-Ba1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ToO-xx-gSS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ERI-6O-7jN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2241" y="980"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jnY-aT-0qV">
+            <objects>
+                <viewController id="ETL-vq-GWK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qoT-MR-vaJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="qP1-2b-okA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wgJ-rC-vWQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vKg-P7-eM2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2976" y="976"/>
+        </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="JJD-vi-cJm">
             <objects>
@@ -156,6 +365,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Dashboard 1.4 start new recording" translatesAutoresizingMaskIntoConstraints="NO" id="snd-Ui-imZ">
+                                <rect key="frame" x="-1" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5x-fP-khy">
                                 <rect key="frame" x="65" y="506" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -165,11 +378,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3IY-HZ-4p9">
-                                <rect key="frame" x="221" y="506" width="39" height="30"/>
+                                <rect key="frame" x="321" y="28" width="53" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sleep"/>
                                 <connections>
                                     <action selector="sleepButtonPressed:" destination="wXr-iv-OgI" eventType="touchUpInside" id="fZs-Jy-vNt"/>
+                                    <segue destination="fco-I0-fR8" kind="show" id="VxI-C8-scM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -178,7 +391,91 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pmz-Hk-lTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4732" y="128"/>
+            <point key="canvasLocation" x="4732" y="127.28635682158921"/>
+        </scene>
+        <!--Time Record View Controller-->
+        <scene sceneID="I3B-cc-TYt">
+            <objects>
+                <viewController id="fco-I0-fR8" customClass="TimeRecordViewController" customModule="SleepSocial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DiK-w9-EK7"/>
+                        <viewControllerLayoutGuide type="bottom" id="yqC-P0-is4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cGY-XN-VWs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Dashboard 1.6 save recording" translatesAutoresizingMaskIntoConstraints="NO" id="Ji3-Td-d3v" customClass="TimeRecordViewCOntroller">
+                                <rect key="frame" x="-2" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLc-4P-EKa">
+                                <rect key="frame" x="319" y="28" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sleepButtonPressed:" destination="fco-I0-fR8" eventType="touchUpInside" id="BQN-Mw-pu1"/>
+                                    <segue destination="UWN-Vo-9ZY" kind="show" id="5bC-li-xIo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UNU-H6-GWU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4727.1999999999998" y="796.55172413793105"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wCK-AE-QBF">
+            <objects>
+                <viewController id="UWN-Vo-9ZY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h4t-SJ-85u"/>
+                        <viewControllerLayoutGuide type="bottom" id="o69-X2-q0X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kVv-Sr-ciN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Dashboard 1.8 alert for how much sleep you got" translatesAutoresizingMaskIntoConstraints="NO" id="Rmy-aR-jAS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1NO-dN-Omt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5798" y="834"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0lL-4d-RCK">
+            <objects>
+                <viewController id="Eym-d3-8JK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BPi-Z7-Voy"/>
+                        <viewControllerLayoutGuide type="bottom" id="mUM-d2-kux"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9M7-Nf-05x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Dashboard 1.5 your sleep record is in progress" translatesAutoresizingMaskIntoConstraints="NO" id="iCm-Jd-hvb">
+                                <rect key="frame" x="-15" y="-26" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOI-zr-8Cv">
+                                <rect key="frame" x="148" y="341" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2h7-se-ffk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5629.6000000000004" y="134.48275862068968"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="sD7-O2-Drp">
@@ -258,16 +555,32 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zLu-1d-N3A">
+                                <rect key="frame" x="80" y="475" width="212" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="6EL-MO-nTk" kind="show" id="L9R-w0-1PN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lFa-Iz-jgf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3659" y="125"/>
+            <point key="canvasLocation" x="3658.4000000000001" y="124.58770614692655"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Dashboard 1.1 hover over first bar " width="375" height="667"/>
+        <image name="Dashboard 1.3 tooltip for alert" width="375" height="667"/>
+        <image name="Dashboard 1.4 start new recording" width="375" height="667"/>
+        <image name="Dashboard 1.5 your sleep record is in progress" width="375" height="667"/>
+        <image name="Dashboard 1.6 save recording" width="375" height="667"/>
+        <image name="Dashboard 1.8 alert for how much sleep you got" width="375" height="667"/>
+        <image name="Feed 1" width="375" height="667"/>
+        <image name="Feed 1.4 register friend " width="375" height="667"/>
+        <image name="Feed 1.6 view progress" width="375" height="667"/>
         <image name="Splash screen" width="375" height="667"/>
         <image name="resized_vector1" width="159" height="150"/>
         <image name="sign_up_goals__2_" width="375" height="667"/>
