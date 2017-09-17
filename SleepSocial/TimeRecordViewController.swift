@@ -33,11 +33,13 @@ class TimeRecordViewController: UIViewController {
     */
     
     @IBAction func wakeButtonPressed(_ sender: Any) {
-        recordSleepTime()
+        print("Wakeup pressed")
+        recordWakeupTime()
     }
     
     @IBAction func sleepButtonPressed(_ sender: Any) {
-        recordWakeupTime()
+        print("Sleep pressed")
+        recordSleepTime()
     }
     
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -312,20 +312,12 @@
                                 <rect key="frame" x="-1" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5x-fP-khy">
-                                <rect key="frame" x="65" y="506" width="42" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Wake "/>
-                                <connections>
-                                    <action selector="wakeButtonPressed:" destination="wXr-iv-OgI" eventType="touchUpInside" id="gqV-CC-qBa"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3IY-HZ-4p9">
-                                <rect key="frame" x="321" y="28" width="53" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iD3-xA-TbN">
+                                <rect key="frame" x="326" y="28" width="48" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="sleepButtonPressed:" destination="wXr-iv-OgI" eventType="touchUpInside" id="fZs-Jy-vNt"/>
-                                    <segue destination="fco-I0-fR8" kind="show" id="VxI-C8-scM"/>
+                                    <action selector="sleepButtonPressed:" destination="wXr-iv-OgI" eventType="touchUpInside" id="6zC-5l-fcX"/>
+                                    <segue destination="fco-I0-fR8" kind="show" id="lyZ-dT-jUv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -334,7 +326,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pmz-Hk-lTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1663" y="968"/>
+            <point key="canvasLocation" x="1661.5999999999999" y="967.4662668665668"/>
         </scene>
         <!--Time Record View Controller-->
         <scene sceneID="I3B-cc-TYt">
@@ -348,16 +340,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Dashboard 1.6 save recording" translatesAutoresizingMaskIntoConstraints="NO" id="Ji3-Td-d3v" customClass="TimeRecordViewCOntroller">
-                                <rect key="frame" x="-2" y="0.0" width="375" height="667"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Dashboard 1.6 save recording-1" translatesAutoresizingMaskIntoConstraints="NO" id="zx5-Wb-kzW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLc-4P-EKa">
-                                <rect key="frame" x="319" y="28" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkH-mF-eev">
+                                <rect key="frame" x="324" y="28" width="51" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="sleepButtonPressed:" destination="fco-I0-fR8" eventType="touchUpInside" id="BQN-Mw-pu1"/>
-                                    <segue destination="UWN-Vo-9ZY" kind="show" id="5bC-li-xIo"/>
+                                    <action selector="wakeButtonPressed:" destination="fco-I0-fR8" eventType="touchUpInside" id="9Sm-B3-TG2"/>
+                                    <segue destination="UWN-Vo-9ZY" kind="show" id="tzj-sO-JAR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -366,7 +358,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UNU-H6-GWU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2711" y="967"/>
+            <point key="canvasLocation" x="2709.5999999999999" y="966.56671664167925"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="wCK-AE-QBF">
@@ -527,7 +519,7 @@
         <image name="Dashboard 1.3 tooltip for alert" width="375" height="667"/>
         <image name="Dashboard 1.4 start new recording" width="375" height="667"/>
         <image name="Dashboard 1.5 your sleep record is in progress" width="375" height="667"/>
-        <image name="Dashboard 1.6 save recording" width="375" height="667"/>
+        <image name="Dashboard 1.6 save recording-1" width="375" height="667"/>
         <image name="Dashboard 1.8 alert for how much sleep you got" width="375" height="667"/>
         <image name="Feed 1" width="375" height="667"/>
         <image name="Feed 1.4 register friend " width="375" height="667"/>
