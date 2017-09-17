@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  SleepSocial
-//
-//  Created by Nicholas Wu on 9/16/17.
-//  Copyright © 2017 Sleep Social. All rights reserved.
-//
-
 import UIKit
 import CoreData
 

@@ -15,6 +15,9 @@
 		6CBF061A1F6E058F002EF561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CBF06181F6E058F002EF561 /* LaunchScreen.storyboard */; };
 		6CBF06251F6E058F002EF561 /* SleepSocialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBF06241F6E058F002EF561 /* SleepSocialTests.swift */; };
 		6CBF06301F6E0590002EF561 /* SleepSocialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBF062F1F6E0590002EF561 /* SleepSocialUITests.swift */; };
+		6CBF063E1F6E2934002EF561 /* SSUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBF063D1F6E2934002EF561 /* SSUtil.swift */; };
+		6CBF06401F6E66D4002EF561 /* AppSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBF063F1F6E66D4002EF561 /* AppSession.swift */; };
+		6CBF06421F6E6A50002EF561 /* SSAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBF06411F6E6A50002EF561 /* SSAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		6CBF062B1F6E0590002EF561 /* SleepSocialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepSocialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CBF062F1F6E0590002EF561 /* SleepSocialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSocialUITests.swift; sourceTree = "<group>"; };
 		6CBF06311F6E0590002EF561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CBF063D1F6E2934002EF561 /* SSUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSUtil.swift; sourceTree = "<group>"; };
+		6CBF063F1F6E66D4002EF561 /* AppSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSession.swift; sourceTree = "<group>"; };
+		6CBF06411F6E6A50002EF561 /* SSAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				6CBF06181F6E058F002EF561 /* LaunchScreen.storyboard */,
 				6CBF061B1F6E058F002EF561 /* Info.plist */,
 				6CBF06131F6E058F002EF561 /* SleepSocial.xcdatamodeld */,
+				6CBF063D1F6E2934002EF561 /* SSUtil.swift */,
+				6CBF063F1F6E66D4002EF561 /* AppSession.swift */,
+				6CBF06411F6E6A50002EF561 /* SSAPI.swift */,
 			);
 			path = SleepSocial;
 			sourceTree = "<group>";
@@ -262,9 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CBF06421F6E6A50002EF561 /* SSAPI.swift in Sources */,
+				6CBF06401F6E66D4002EF561 /* AppSession.swift in Sources */,
 				6CBF06151F6E058F002EF561 /* SleepSocial.xcdatamodeld in Sources */,
 				6CBF060F1F6E058F002EF561 /* ViewController.swift in Sources */,
 				6CBF060D1F6E058F002EF561 /* AppDelegate.swift in Sources */,
+				6CBF063E1F6E2934002EF561 /* SSUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SleepSocial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sleepsocial.SleepSocial;
@@ -430,6 +443,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SleepSocial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sleepsocial.SleepSocial;
