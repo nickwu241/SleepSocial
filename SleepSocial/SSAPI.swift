@@ -16,6 +16,69 @@ func recordWakeupTime() {
     record("wakeupTime")
 }
 
+func searchFriend(username: String) {
+    guard var urlRequest = Requests.post(SSendpoint) else {
+        return
+    }
+    
+    urlRequest.addValue("application/json", forHTTPHeaderField: "content-type")
+    let body: [String: Any] = ["username": username, "actionType": "searchFriend"]
+    let jsonBody: Data
+    do {
+        jsonBody = try JSONSerialization.data(withJSONObject: body, options: [])
+        urlRequest.httpBody = jsonBody
+    } catch {
+        print("ERROR: cannot create JSON")
+        return
+    }
+    
+    let task = AppSession.urlSession.dataTask(with: urlRequest) {
+        (data, response, error) in
+        guard error == nil else {
+            print("ERROR: calling POST")
+            print(error!)
+            return
+        }
+        
+        guard let responseData = data else {
+            print("ERROR: did not receive data")
+            return
+        }
+        
+        do {
+            guard let jsonResponse = try JSONSerialization.jsonObject(with: responseData, options: [])
+                as? [String: Any] else {
+                    print("ERROR1: trying to convert data to JSON")
+                    return
+            }
+            print(jsonResponse)
+            guard let data = jsonResponse["data"] else {
+                print("ERROR: no 'data' in response body")
+                return
+            }
+            
+            guard let sleepRecords = (data as! [String : Any])["timeSleptByDate"] else {
+                print("ERROR: no 'timeSleptByDate' in response body")
+                return
+            }
+            
+            for (i, sleepRecord) in (sleepRecords as! [Any]).enumerated() {
+                for (k, v) in (sleepRecord as! Dictionary<NSObject, AnyObject>) {
+                    if String(describing: k) == "timeSlept" {
+                        SleepSummary.data[i] = String(describing: v) != "" ? v as! Double : NA
+                    }
+                }
+            }
+            
+        }
+        catch {
+            print("ERROR2: trying to convert data to JSON")
+            return
+        }
+    }
+    task.resume()
+}
+
 fileprivate let SSendpoint = "https://sleep-tracker.azurewebsites.net/api/HttpTriggerJS1?code=j3aHDW2K2DAesDA49Rq68wZvHt8Gl/3V12TXqh/WDdPJnWRKhwGZhQ=="
 
 fileprivate enum RecordTime {
@@ -107,7 +170,7 @@ fileprivate func signIn(username: String, pw: String, createNewAccount: Bool) {
             
             if !createNewAccount {
                 guard let accessToken = jsonResponse["accessToken"] else {
-                    print("ERROR1: no accessToken in response body")
+                    print("ERROR1: no 'accessToken' in response body")
                     return
                 }
                 AppSession.accessToken = String(describing: accessToken)
