@@ -18,6 +18,8 @@
 		6CBF063E1F6E2934002EF561 /* SSUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBF063D1F6E2934002EF561 /* SSUtil.swift */; };
 		6CBF06401F6E66D4002EF561 /* AppSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBF063F1F6E66D4002EF561 /* AppSession.swift */; };
 		6CBF06421F6E6A50002EF561 /* SSAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBF06411F6E6A50002EF561 /* SSAPI.swift */; };
+		9079E39A1F6E9F5C00588FF2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9079E3991F6E9F5C00588FF2 /* SignUpViewController.swift */; };
+		9079E39C1F6EC28700588FF2 /* TimeRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9079E39B1F6EC28700588FF2 /* TimeRecordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		6CBF063D1F6E2934002EF561 /* SSUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSUtil.swift; sourceTree = "<group>"; };
 		6CBF063F1F6E66D4002EF561 /* AppSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSession.swift; sourceTree = "<group>"; };
 		6CBF06411F6E6A50002EF561 /* SSAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSAPI.swift; sourceTree = "<group>"; };
+		9079E3991F6E9F5C00588FF2 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		9079E39B1F6EC28700588FF2 /* TimeRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeRecordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				6CBF063D1F6E2934002EF561 /* SSUtil.swift */,
 				6CBF063F1F6E66D4002EF561 /* AppSession.swift */,
 				6CBF06411F6E6A50002EF561 /* SSAPI.swift */,
+				9079E3991F6E9F5C00588FF2 /* SignUpViewController.swift */,
+				9079E39B1F6EC28700588FF2 /* TimeRecordViewController.swift */,
 			);
 			path = SleepSocial;
 			sourceTree = "<group>";
@@ -272,10 +278,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CBF06421F6E6A50002EF561 /* SSAPI.swift in Sources */,
+				9079E39A1F6E9F5C00588FF2 /* SignUpViewController.swift in Sources */,
 				6CBF06401F6E66D4002EF561 /* AppSession.swift in Sources */,
 				6CBF06151F6E058F002EF561 /* SleepSocial.xcdatamodeld in Sources */,
 				6CBF060F1F6E058F002EF561 /* ViewController.swift in Sources */,
 				6CBF060D1F6E058F002EF561 /* AppDelegate.swift in Sources */,
+				9079E39C1F6EC28700588FF2 /* TimeRecordViewController.swift in Sources */,
 				6CBF063E1F6E2934002EF561 /* SSUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,6 +533,7 @@
 				6CBF06361F6E0590002EF561 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6CBF06371F6E0590002EF561 /* Build configuration list for PBXNativeTarget "SleepSocialTests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +542,7 @@
 				6CBF06391F6E0590002EF561 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6CBF063A1F6E0590002EF561 /* Build configuration list for PBXNativeTarget "SleepSocialUITests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +551,7 @@
 				6CBF063C1F6E0590002EF561 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

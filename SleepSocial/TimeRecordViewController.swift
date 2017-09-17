@@ -31,5 +31,14 @@ class TimeRecordViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func wakeButtonPressed(_ sender: Any) {
+        recordSleepTime()
+    }
+    
+    @IBAction func sleepButtonPressed(_ sender: Any) {
+        recordWakeupTime()
+    }
+    
 
 }
